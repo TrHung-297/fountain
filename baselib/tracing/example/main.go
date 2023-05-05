@@ -2,7 +2,7 @@
 
 package main
 
-import "gitlab.gplay.vn/gtv-backend/fountain/baselib/tracing"
+import "github.com/TrHung-297/fountain/baselib/tracing"
 
 func main() {
 	tracing.InitTracing("Test")

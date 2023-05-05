@@ -3,7 +3,7 @@ package validators
 import (
 	"testing"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 	"gopkg.in/go-playground/assert.v1"
 )
 

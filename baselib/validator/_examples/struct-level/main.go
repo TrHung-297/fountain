@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 )
 
 // User contains user information

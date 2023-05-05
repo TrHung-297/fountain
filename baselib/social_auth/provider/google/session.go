@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/social_auth"
+	"github.com/TrHung-297/fountain/baselib/social_auth"
 )
 
 // Session stores data during the auth process with Google.

@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 func SetupConfigEnv() {

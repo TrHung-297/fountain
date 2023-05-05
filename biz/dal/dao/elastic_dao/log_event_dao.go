@@ -10,12 +10,12 @@ import (
 	"io/ioutil"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 
 	elastic "github.com/elastic/go-elasticsearch/v7"
 	"github.com/elastic/go-elasticsearch/v7/esapi"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/elastic_client"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/elastic_client"
 )
 
 // ESResponse type;

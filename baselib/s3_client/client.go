@@ -16,8 +16,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/constant"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/constant"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 type S3Client struct {

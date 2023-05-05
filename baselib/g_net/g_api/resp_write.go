@@ -11,9 +11,9 @@ package g_api
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 	"gopkg.in/go-playground/validator.v9"
 )
 

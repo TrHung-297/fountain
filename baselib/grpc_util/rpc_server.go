@@ -8,10 +8,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_etcd"
-	grpc_recovery2 "gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/recovery2"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_etcd"
+	grpc_recovery2 "github.com/TrHung-297/fountain/baselib/grpc_util/middleware/recovery2"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
 
 	"google.golang.org/grpc"
 )

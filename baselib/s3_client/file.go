@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/gabriel-vasile/mimetype"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 // s3FilePath is key

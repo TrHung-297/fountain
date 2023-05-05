@@ -3,7 +3,7 @@ package g_etcd
 import (
 	"fmt"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
 	"go.etcd.io/etcd/client/v3/naming/resolver"
 	gr "google.golang.org/grpc/resolver"
 )

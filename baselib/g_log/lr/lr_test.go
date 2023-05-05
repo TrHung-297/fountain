@@ -46,7 +46,7 @@ func TestReportCallerWhenConfigured(t *testing.T) {
 		assert.Equal(t, "testWithCaller", fields["msg"])
 		assert.Equal(t, "info", fields["level"])
 		assert.Equal(t,
-			"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr_test.TestReportCallerWhenConfigured.func3", fields[FieldKeyFunc])
+			"github.com/TrHung-297/fountain/baselib/g_log/lr_test.TestReportCallerWhenConfigured.func3", fields[FieldKeyFunc])
 	})
 
 	logAndAssertJSON(t, func(log *Logger) {
@@ -385,7 +385,7 @@ func TestNestedLoggingReportsCorrectCaller(t *testing.T) {
 	assert.Equal(t, "looks delicious", fields["msg"])
 	assert.Equal(t, "eating raw fish", fields["context"])
 	assert.Equal(t,
-		"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr_test.TestNestedLoggingReportsCorrectCaller", fields["func"])
+		"github.com/TrHung-297/fountain/baselib/g_log/lr_test.TestNestedLoggingReportsCorrectCaller", fields["func"])
 	cwd, err := os.Getwd()
 	require.NoError(t, err)
 	assert.Equal(t, filepath.ToSlash(fmt.Sprintf("%s/lr_test.go:%d", cwd, line-1)), filepath.ToSlash(fields["file"].(string)))
@@ -416,7 +416,7 @@ func TestNestedLoggingReportsCorrectCaller(t *testing.T) {
 	assert.Equal(t, "The hardest workin' man in show business", fields["msg"])
 	assert.Nil(t, fields["fields.msg"], "should not have prefixed previous `msg` entry")
 	assert.Equal(t,
-		"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr_test.TestNestedLoggingReportsCorrectCaller", fields["func"])
+		"github.com/TrHung-297/fountain/baselib/g_log/lr_test.TestNestedLoggingReportsCorrectCaller", fields["func"])
 	require.NoError(t, err)
 	assert.Equal(t, filepath.ToSlash(fmt.Sprintf("%s/lr_test.go:%d", cwd, line-1)), filepath.ToSlash(fields["file"].(string)))
 

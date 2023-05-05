@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/cache"
+	"github.com/TrHung-297/fountain/baselib/cache"
 )
 
 // FileCacheItem is basic unit of file cache adapter.

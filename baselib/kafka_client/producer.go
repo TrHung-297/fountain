@@ -13,9 +13,9 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/env"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/env"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 
 	"github.com/Shopify/sarama"
 )

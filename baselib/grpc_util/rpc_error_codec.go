@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/grpc-ecosystem/go-grpc-middleware/util/metautils"

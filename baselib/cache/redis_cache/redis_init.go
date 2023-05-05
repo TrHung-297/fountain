@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/cache"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/redis_client"
+	"github.com/TrHung-297/fountain/baselib/cache"
+	"github.com/TrHung-297/fountain/baselib/redis_client"
 )
 
 // StartAndGC start redis cache adapter.

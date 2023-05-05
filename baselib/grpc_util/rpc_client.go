@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_etcd"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_etcd"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/otgrpc"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/middleware/otgrpc"
 
 	"github.com/opentracing/opentracing-go"
 	"google.golang.org/grpc"

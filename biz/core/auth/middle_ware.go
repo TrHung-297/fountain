@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_api"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_token"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_api"
+	"github.com/TrHung-297/fountain/baselib/g_token"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 )
 
 func (ctrl *AuthController) BaseGateway(c *fiber.Ctx, shortLive bool) (err error) {

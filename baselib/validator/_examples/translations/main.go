@@ -5,7 +5,7 @@ import (
 
 	"github.com/go-playground/locales/en"
 	ut "github.com/go-playground/universal-translator"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 	en_translations "gopkg.in/go-playground/validator.v9/translations/en"
 )
 

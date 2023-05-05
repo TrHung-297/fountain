@@ -18,7 +18,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/social_auth"
+	"github.com/TrHung-297/fountain/baselib/social_auth"
 	"golang.org/x/oauth2"
 )
 

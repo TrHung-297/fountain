@@ -16,7 +16,7 @@ The simplest way to use Lr is simply the package-level exported logger:
   package main
 
   import (
-    log "gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr"
+    log "github.com/TrHung-297/fountain/baselib/g_log/lr"
   )
 
   func main() {
@@ -30,6 +30,6 @@ The simplest way to use Lr is simply the package-level exported logger:
 Output:
   time="2015-09-07T08:48:33Z" level=info msg="A walrus appears" animal=walrus number=1 size=10
 
-For a full guide visit https://gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr
+For a full guide visit https://github.com/TrHung-297/fountain/baselib/g_log/lr
 */
 package lr

@@ -23,7 +23,7 @@ import (
 	// "strconv"
 	"io/ioutil"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/buff"
+	"github.com/TrHung-297/fountain/baselib/buff"
 )
 
 /*

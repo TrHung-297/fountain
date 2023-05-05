@@ -5,9 +5,9 @@ package redis_dao
 import (
 	"context"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/redis_client"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/redis_client"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 )
 
 type OpenIDCacheDAO struct {

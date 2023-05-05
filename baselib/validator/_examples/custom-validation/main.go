@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 )
 
 // MyStruct ..

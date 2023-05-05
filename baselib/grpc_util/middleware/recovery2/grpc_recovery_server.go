@@ -3,7 +3,7 @@
 package grpc_recovery2
 
 import (
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/otgrpc"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/middleware/otgrpc"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	"github.com/opentracing/opentracing-go"

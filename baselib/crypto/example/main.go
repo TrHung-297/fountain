@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"log"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/crypto"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/crypto"
 )
 
 type GameID string

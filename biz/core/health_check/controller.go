@@ -3,10 +3,10 @@
 package health_check
 
 import (
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/env"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_api"
-	"gitlab.gplay.vn/gtv-backend/fountain/biz/core"
+	"github.com/TrHung-297/fountain/baselib/env"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_api"
+	"github.com/TrHung-297/fountain/biz/core"
 )
 
 type healthCheckDAO struct{}

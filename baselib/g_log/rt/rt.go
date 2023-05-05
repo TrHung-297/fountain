@@ -12,7 +12,7 @@ package rt
 import (
 	"io"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr"
+	"github.com/TrHung-297/fountain/baselib/g_log/lr"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

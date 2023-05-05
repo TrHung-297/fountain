@@ -7,10 +7,10 @@ import (
 	"log"
 
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grand"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/redis_client"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/grand"
+	"github.com/TrHung-297/fountain/baselib/redis_client"
 )
 
 func main() {

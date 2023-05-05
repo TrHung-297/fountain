@@ -3,7 +3,7 @@ package base
 import (
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/timer"
+	"github.com/TrHung-297/fountain/baselib/timer"
 )
 
 // TryParseDate func; try parse date to time

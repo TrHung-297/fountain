@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/otgrpc"
-	testpb "gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/otgrpc/test/otgrpc_testing"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/middleware/otgrpc"
+	testpb "github.com/TrHung-297/fountain/baselib/grpc_util/middleware/otgrpc/test/otgrpc_testing"
 
 	"context"
 

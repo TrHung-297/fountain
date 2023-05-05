@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql" // import your used driver
 	"github.com/jmoiron/sqlx"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 type SQLClient struct {

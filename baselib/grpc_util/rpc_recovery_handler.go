@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"runtime/debug"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/env"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/env"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

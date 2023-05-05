@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-playground/locales"
 	ut "github.com/go-playground/universal-translator"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 )
 
 // RegisterDefaultTranslations registers a set of default translations

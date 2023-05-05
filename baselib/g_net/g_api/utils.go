@@ -14,9 +14,9 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/crypto"
-	"gitlab.gplay.vn/gtv-backend/fountain/proto/g_proto"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/crypto"
+	"github.com/TrHung-297/fountain/proto/g_proto"
 )
 
 func ping(c *fiber.Ctx) error {

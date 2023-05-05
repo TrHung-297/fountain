@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/cache"
+	"github.com/TrHung-297/fountain/baselib/cache"
 )
 
 var (

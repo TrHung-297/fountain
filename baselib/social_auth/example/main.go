@@ -12,9 +12,9 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/session"
 	"github.com/gofiber/template/html"
-	social_auth "gitlab.gplay.vn/gtv-backend/fountain/baselib/social_auth"
-	_ "gitlab.gplay.vn/gtv-backend/fountain/baselib/social_auth/provider/facebook"
-	_ "gitlab.gplay.vn/gtv-backend/fountain/baselib/social_auth/provider/google"
+	social_auth "github.com/TrHung-297/fountain/baselib/social_auth"
+	_ "github.com/TrHung-297/fountain/baselib/social_auth/provider/facebook"
+	_ "github.com/TrHung-297/fountain/baselib/social_auth/provider/google"
 )
 
 type customer struct {

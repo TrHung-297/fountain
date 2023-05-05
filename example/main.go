@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"gitlab.gplay.vn/gtv-backend/fountain"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 func init() {

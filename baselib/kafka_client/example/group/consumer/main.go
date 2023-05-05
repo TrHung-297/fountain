@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/kafka_client"
+	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/kafka_client"
 )
 
 func init() {

@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/env"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grand"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/env"
+	"github.com/TrHung-297/fountain/baselib/grand"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/client/v3/naming/endpoints"
 )

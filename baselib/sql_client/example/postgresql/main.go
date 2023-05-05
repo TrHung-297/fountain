@@ -5,8 +5,8 @@ import (
 	"log"
 
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/env"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/sql_client"
+	"github.com/TrHung-297/fountain/baselib/env"
+	"github.com/TrHung-297/fountain/baselib/sql_client"
 )
 
 func init() {

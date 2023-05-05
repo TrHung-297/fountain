@@ -5,9 +5,9 @@ package dao
 import (
 	"sync"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/redis_client"
-	"gitlab.gplay.vn/gtv-backend/fountain/biz/dal/dao/redis_dao"
+	"github.com/TrHung-297/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/redis_client"
+	"github.com/TrHung-297/fountain/biz/dal/dao/redis_dao"
 
 	elastic "github.com/elastic/go-elasticsearch/v7"
 	"github.com/jmoiron/sqlx"

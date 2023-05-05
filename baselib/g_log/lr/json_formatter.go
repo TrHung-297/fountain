@@ -75,7 +75,7 @@ func (f *JSONFormatter) Format(entry *Entry) ([]byte, error) {
 		switch v := v.(type) {
 		case error:
 			// Otherwise errors are ignored by `encoding/json`
-			// https://gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr/issues/137
+			// https://github.com/TrHung-297/fountain/baselib/g_log/lr/issues/137
 			data[k] = v.Error()
 		default:
 			data[k] = v

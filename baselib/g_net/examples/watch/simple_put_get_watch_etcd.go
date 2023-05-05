@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grand"
+	"github.com/TrHung-297/fountain/baselib/grand"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

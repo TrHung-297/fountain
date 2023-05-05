@@ -33,7 +33,7 @@ Use go get.
 
 Then import the validator package into your own code.
 
-	import "gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	import "github.com/TrHung-297/fountain/baselib/validator"
 
 Error Return Value
 -------

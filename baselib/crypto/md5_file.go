@@ -15,7 +15,7 @@ import (
 	"io"
 	"os"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 func CalcMd5File(filename string) (string, error) {

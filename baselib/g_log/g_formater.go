@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr"
+	"github.com/TrHung-297/fountain/baselib/g_log/lr"
 )
 
 var pid = os.Getpid()
@@ -39,7 +39,7 @@ func (GTextFormatter) Format(entry *lr.Entry) ([]byte, error) {
 	// for f, again := frames.Next(); again; f, again = frames.Next() {
 	// 	pkg := getPackageName(f.Function)
 
-	// 	if strings.EqualFold(pkg, "gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr") || strings.EqualFold(pkg, "gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log") {
+	// 	if strings.EqualFold(pkg, "github.com/TrHung-297/fountain/baselib/g_log/lr") || strings.EqualFold(pkg, "github.com/TrHung-297/fountain/baselib/g_log") {
 	// 		continue
 	// 	}
 

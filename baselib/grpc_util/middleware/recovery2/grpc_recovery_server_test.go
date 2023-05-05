@@ -7,7 +7,7 @@ import (
 	"net"
 	"testing"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/middleware/examples/zproto"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/middleware/examples/zproto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

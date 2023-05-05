@@ -7,9 +7,9 @@ import (
 	"net"
 	"sync"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_etcd"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery/examples/proto"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_etcd"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery/examples/proto"
 
 	"context"
 

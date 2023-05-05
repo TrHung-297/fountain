@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 // UDPClient type;

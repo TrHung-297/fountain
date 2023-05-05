@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/mattn/go-colorable"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/rt"
+	"github.com/TrHung-297/fountain/baselib/g_log/lr"
+	"github.com/TrHung-297/fountain/baselib/g_log/rt"
 )
 
 var logGInstance *lr.Logger

@@ -6,7 +6,7 @@ import (
 
 	zhongwen "github.com/go-playground/locales/zh"
 	ut "github.com/go-playground/universal-translator"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/validator"
+	"github.com/TrHung-297/fountain/baselib/validator"
 	. "gopkg.in/go-playground/assert.v1"
 )
 

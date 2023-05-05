@@ -3,10 +3,10 @@
 package auth
 
 import (
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/firebase_auth"
-	"gitlab.gplay.vn/gtv-backend/fountain/biz/core"
-	"gitlab.gplay.vn/gtv-backend/fountain/biz/dal/dao"
-	"gitlab.gplay.vn/gtv-backend/fountain/biz/dal/dao/redis_dao"
+	"github.com/TrHung-297/fountain/baselib/firebase_auth"
+	"github.com/TrHung-297/fountain/biz/core"
+	"github.com/TrHung-297/fountain/biz/dal/dao"
+	"github.com/TrHung-297/fountain/biz/dal/dao/redis_dao"
 )
 
 type authDAO struct {

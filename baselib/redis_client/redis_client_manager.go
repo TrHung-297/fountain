@@ -4,7 +4,7 @@ package redis_client
 import (
 	"fmt"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 type redisClientManager struct {

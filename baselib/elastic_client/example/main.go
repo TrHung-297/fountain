@@ -15,10 +15,10 @@ import (
 	"io/ioutil"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/elastic_client"
+	"github.com/TrHung-297/fountain/baselib/elastic_client"
 )
 
 func init() {

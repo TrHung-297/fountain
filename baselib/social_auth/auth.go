@@ -20,7 +20,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/session"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_net/g_api"
+	"github.com/TrHung-297/fountain/baselib/g_net/g_api"
 )
 
 // SessionName is the key used to access the session store.

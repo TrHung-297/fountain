@@ -15,7 +15,7 @@ import (
 	"math"
 	"math/big"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log"
+	"github.com/TrHung-297/fountain/baselib/g_log"
 )
 
 type DecodeBuf struct {

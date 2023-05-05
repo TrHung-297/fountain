@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/g_log/lr"
+	"github.com/TrHung-297/fountain/baselib/g_log/lr"
 )
 
 type g_entry struct {

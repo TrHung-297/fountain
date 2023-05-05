@@ -10,7 +10,7 @@
 package grpc_util
 
 import (
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/grpc_util/service_discovery"
+	"github.com/TrHung-297/fountain/baselib/grpc_util/service_discovery"
 )
 
 // RPCServerConfig func

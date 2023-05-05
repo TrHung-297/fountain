@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/spf13/viper"
-	"gitlab.gplay.vn/gtv-backend/fountain/baselib/base"
+	"github.com/TrHung-297/fountain/baselib/base"
 )
 
 func init() {
