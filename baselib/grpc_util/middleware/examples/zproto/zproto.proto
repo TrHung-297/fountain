@@ -1,0 +1,37 @@
+/* !!
+ * File: zproto.proto
+ * File Created: Thursday, 27th May 2021 10:19:57 am
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Thursday, 27th May 2021 10:54:08 am
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "vn.gtv.zproto";
+option java_outer_classname = "ZProtoChatTest";
+option optimize_for = CODE_SIZE;
+
+package zproto;
+
+// Interface exported by the server.
+service ChatTest {
+    rpc Connect(ChatSession) returns (stream ChatMessage);
+    rpc SendChat(ChatMessage) returns (VoidRsp2);
+}
+
+message ChatMessage {
+    string sender_session_id = 1;
+    string message_data = 3;
+}
+
+message ChatSession {
+    string session_id = 1;
+}
+
+message VoidRsp2 {
+}

@@ -1,0 +1,21 @@
+/* !!
+ * File: gostash.obj.proto
+ * File Created: Wednesday, 5th May 2021 3:32:48 pm
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Wednesday, 5th May 2021 3:32:48 pm
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+
+syntax = "proto3";
+
+package gostash;
+
+option java_package = "vn.gtv.gostash";
+option java_outer_classname = "GoStash";
+option optimize_for = CODE_SIZE;
+
+

@@ -1,0 +1,52 @@
+package kstats
+
+import (
+	"context"
+
+	newRelic "github.com/newrelic/go-agent"
+	"google.golang.org/grpc/stats"
+)
+
+// NewClientStatsHandler creates a new stats.Handler instance for measuring application performances with New Relic.
+func NewClientStatsHandler() stats.Handler {
+	return &clientStatsHandlerImpl{}
+}
+
+// NewGatewayStatsHandler creates a new stats.Handler instance for measuring application performances with New Relic.
+func NewGatewayStatsHandler() stats.Handler {
+	return &clientStatsHandlerImpl{updateTxnName: true}
+}
+
+type clientStatsHandlerImpl struct {
+	updateTxnName bool
+}
+
+func (h *clientStatsHandlerImpl) TagRPC(ctx context.Context, info *stats.RPCTagInfo) context.Context {
+	txn := newRelic.FromContext(ctx)
+
+	if h.updateTxnName {
+		txn.SetName(info.FullMethodName)
+	}
+
+	seg := newRelic.StartSegment(txn, info.FullMethodName)
+
+	return setSegment(ctx, seg)
+}
+
+func (h *clientStatsHandlerImpl) HandleRPC(ctx context.Context, s stats.RPCStats) {
+	switch s.(type) {
+	case *stats.End:
+		if seg, ok := getSegment(ctx); ok {
+			seg.End()
+		}
+	}
+}
+
+func (h *clientStatsHandlerImpl) TagConn(ctx context.Context, info *stats.ConnTagInfo) context.Context {
+	// no-op
+	return ctx
+}
+
+func (h *clientStatsHandlerImpl) HandleConn(ctx context.Context, s stats.ConnStats) {
+	// no-op
+}

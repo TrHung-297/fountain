@@ -1,0 +1,24 @@
+/* !!
+ * File: schema_rpc.crc32.gtv.proto
+ * File Created: Wednesday, 14th July 2021 4:56:07 pm
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Wednesday, 14th July 2021 4:56:07 pm
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+syntax = "proto3";
+
+package g_proto;
+
+option java_package = "vn.gtv.g_proto";
+option java_outer_classname = "G_Proto";
+option optimize_for = CODE_SIZE;
+
+enum GTVConstructor {
+    CRC32_UNKNOWN = 0;
+    CRC32_Penalty_Ticket_Execute = 1;
+    CRC32_ranking_penalty_ticket_execute = -873187034;
+}

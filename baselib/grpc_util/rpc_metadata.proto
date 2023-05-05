@@ -1,0 +1,76 @@
+/* !!
+ * File: rpc_metadata.proto
+ * File Created: Thursday, 27th May 2021 10:19:57 am
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Thursday, 27th May 2021 10:31:06 am
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "vn.gtv.zproto";
+option java_outer_classname = "ZProtoRpcMetaData";
+option optimize_for = CODE_SIZE;
+
+import "google/protobuf/any.proto";
+
+package grpc_util;
+
+//message AuthKeyMetadata {
+//    bytes nonce = 1;
+//    bytes server_nonce = 2;
+//    bytes new_nonce = 3;
+//    bytes a = 4;
+//    bytes p = 5;
+//    int64 auth_key_id = 6;
+//    bytes auth_key = 7;
+//}
+
+message RpcMetadata {
+    string host_name = 1;
+    string pod_name = 2;
+    int32 server_id	 = 3;
+    int64 net_lib_session_id = 4;
+    string client_addr = 5;
+    int64 auth_id = 6;
+    int64 session_id = 7;
+    int64 trace_id = 8;
+    int64 span_id = 9;
+    int64 receive_time = 10;
+    string from = 11;
+    string to = 12;
+
+    // UserID
+    int32 user_id = 13;
+    int64 client_msg_id = 14;
+
+    // gtv version
+    int32 version = 15;
+
+    // term
+    int32 term_state = 16;
+    int32 punish_start_time = 17;
+    int32 punish_expire_time = 18;
+    string punish_reason = 19;
+
+    // Device Info
+    string device_model = 20;
+    string platform = 21;
+    string system_version = 22;
+    int32 api_id = 23;
+    string app_name = 24;
+    string app_version = 25;
+    string country = 26;
+    string region = 27;
+
+    // extend
+    google.protobuf.Any extend = 28;
+}
+ 
+ 

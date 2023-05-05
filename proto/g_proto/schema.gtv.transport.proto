@@ -1,0 +1,26 @@
+/* !!
+ * File: schema.gtv.transport.proto
+ * File Created: Thursday, 27th May 2021 3:10:06 pm
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Thursday, 27th May 2021 3:10:06 pm
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+
+syntax = "proto3";
+
+package g_proto;
+
+option java_package = "vn.gtv.g_proto";
+option java_outer_classname = "G_Proto";
+option optimize_for = CODE_SIZE;
+
+message GTVRpcError {
+    int32 code = 1;
+    int32 error_code = 2;
+    string message = 3;
+    int32 wait_for = 4;
+}

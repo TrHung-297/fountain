@@ -1,0 +1,21 @@
+{
+    "Env": {
+        "Environment": "dev"
+    },
+    "Redis": [
+        {
+            "Name": "cache",
+            "Addrs": [
+                "redis-backend-cluster.gtvplusdev.info.private:6379"
+            ],
+            "Idle": 100,
+            "Active": 100,
+            "DialTimeout": 1,
+            "ReadTimeout": 1,
+            "WriteTimeout": 1,
+            "IdleTimeout": 10,
+            "DBNum": 0,
+            "MaxRetries": 3
+        }
+    ]
+}

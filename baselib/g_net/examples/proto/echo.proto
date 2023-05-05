@@ -1,0 +1,29 @@
+/* !!
+ * File: echo.proto
+ * File Created: Thursday, 27th May 2021 10:19:32 am
+ * Author: KimEricko™ (phamkim.pr@gmail.com)
+ * -----
+ * Last Modified: Thursday, 27th May 2021 10:54:27 am
+ * Modified By: KimEricko™ (phamkim.pr@gmail.com>)
+ * -----
+ * Copyright 2018 - 2021 GTV, GGroup
+ */
+
+// protoc --go_out=plugins=grpc:. echo.proto
+
+syntax = "proto3";
+
+package proto;
+
+message EchoReq {
+    string echo_data = 1;
+}
+
+message EchoRsp {
+    string echo_data = 1;
+}
+
+service EchoService {
+    rpc Echo(EchoReq) returns (EchoRsp) {}
+}
+
