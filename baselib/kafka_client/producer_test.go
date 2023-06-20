@@ -3,15 +3,21 @@
 package kafka_client
 
 import (
+	"fmt"
+	"github.com/Shopify/sarama"
+	"log"
 	"math/rand"
+	"os"
+	"os/signal"
+	"sync"
 	"testing"
 
-	"github.com/spf13/viper"
 	"github.com/TrHung-297/fountain/baselib/base"
+	"github.com/spf13/viper"
 )
 
 func init() {
-	viper.Set("Kafka.Broker", "kafka-chatting.gtvplusdev.info.private:9092")
+	viper.Set("Kafka.Addrs", "kafka-chatting.gtvplusdev.info.private:9092")
 	viper.Set("Kafka.ProducerTopics", "gtv_test")
 	viper.Set("Kafka.ConsumerGroupName", "gtv_consumer_test")
 	viper.Set("Kafka.ConsumerTopicNames", "gtv_test")
@@ -138,4 +144,68 @@ func BenchmarkHeader(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		instance.ProducerPushMessage("gtv_test", msg)
 	}
+}
+
+
+func TestKafka(t *testing.T) {
+	// Cấu hình client Kafka
+	config := sarama.NewConfig()
+	config.Consumer.Return.Errors = true
+
+	// Tạo consumer
+	consumer, err := sarama.NewConsumer([]string{"kafka-chatting.gtvplusdev.info.private:9092"}, config)
+
+	if err != nil {
+		log.Fatalln("Failed to create Kafka consumer:", err)
+	}
+	defer func() {
+		if err := consumer.Close(); err != nil {
+			log.Println("Failed to close Kafka consumer:", err)
+		}
+	}()
+
+	// Đăng ký topic và partition để nhận tin nhắn
+	topic := "chat-topic"      // Thay đổi tên topic theo cấu hình của bạn
+	partition := int32(0)    // Thay đổi partition theo cấu hình của bạn
+	offset := sarama.OffsetNewest // Lựa chọn offset mới nhất (latest)
+
+	// Tạo partition consumer
+	partitionConsumer, err := consumer.ConsumePartition(topic, partition, offset)
+	if err != nil {
+		log.Fatalln("Failed to create Kafka partition consumer:", err)
+	}
+	defer func() {
+		if err := partitionConsumer.Close(); err != nil {
+			log.Println("Failed to close Kafka partition consumer:", err)
+		}
+	}()
+
+	// Sử dụng WaitGroup để đồng bộ hóa goroutine
+	var wg sync.WaitGroup
+	wg.Add(1)
+
+	// Goroutine để nhận tin nhắn
+	go func() {
+		defer wg.Done()
+		for {
+			select {
+			case msg := <-partitionConsumer.Messages():
+				fmt.Printf("Received message: topic=%s, partition=%d, offset=%d, key=%s, value=%s\n",
+					msg.Topic, msg.Partition, msg.Offset, string(msg.Key), string(msg.Value))
+			case err := <-partitionConsumer.Errors():
+				log.Println("Error:", err.Err)
+			}
+		}
+	}()
+
+	// Chờ nhấn Ctrl+C để thoát
+	signalCh := make(chan os.Signal, 1)
+	signal.Notify(signalCh, os.Interrupt)
+	<-signalCh
+
+	// Đóng partition consumer và chờ goroutine kết thúc
+	partitionConsumer.AsyncClose()
+	wg.Wait()
+
+	fmt.Println("Kafka consumer stopped")
 }

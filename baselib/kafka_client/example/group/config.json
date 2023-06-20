@@ -1,0 +1,15 @@
+{
+    "Env": {
+        "Environment": "dev"
+    },
+    "Kafka": {
+        "Addrs": [
+            "kafka-chatting.gtvplusdev.info.private:9092"
+        ],
+        "NumPartitions": 3,
+        "ReplicationFactor": 1,
+        "ProducerTopics": [
+            "gtv_gamification_timeplaygame_event"
+        ]
+    }
+}
